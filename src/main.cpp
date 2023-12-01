@@ -195,7 +195,7 @@ int main(int argc, char** argv)
 	// Populate USB buses
 	usbtop::UsbBuses::populate(bus_filter.get());
 	if (usbtop::UsbBuses::size() == 0) {
-		std::cerr << "No USB bus can be captured thanks to libpcap. Check your name filter and make sure relevent permissions are set !" << std::endl;
+		std::cerr << "No USB bus can be captured thanks to libpcap. Check your name filter and make sure relevant permissions are set !" << std::endl;
 		return 1;
 	}
 
